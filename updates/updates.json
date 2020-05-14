@@ -1,5 +1,5 @@
 {
-    "layout": "layout.liquid",
+    "layout": "update.liquid",
     "pageClass": "sub",
     "tags": ["updates"]
 }
