@@ -72,3 +72,25 @@ video {
         }
     }
 }
+
+.page-body__section__content {
+    height: 200px;
+    max-width: 500px;
+    width: 100%;
+    overflow-y: auto;
+    margin-bottom: 50px;
+    padding: 0 25px;
+    background: transparent;
+    color: $bareboneswhite;
+    h2 {
+        color: $bareboneswhite;
+        margin: 50px 0 25px 0;
+    }
+    a {
+        color: $bareboneswhite;
+        text-decoration: underline;
+        &:hover {
+            color: $dancanettipink;
+        }
+    }
+}

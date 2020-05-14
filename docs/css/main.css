@@ -78,9 +78,9 @@ h1, h2, h3 {
     letter-spacing: .25rem; }
 
 h2, h3 {
-  font-family: courier, sans-serif;
+  font-family: "Khula", sans-serif;
   font-weight: 800;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   letter-spacing: .25rem;
   color: #111;
   padding: 0;
@@ -290,6 +290,24 @@ video {
     color: #fff;
     text-decoration: underline; }
     .collection-list h3:hover {
+      color: #F92A82; }
+
+.page-body__section__content {
+  height: 200px;
+  max-width: 500px;
+  width: 100%;
+  overflow-y: auto;
+  margin-bottom: 50px;
+  padding: 0 25px;
+  background: transparent;
+  color: #fff; }
+  .page-body__section__content h2, .page-body__section__content h3 {
+    color: #fff;
+    margin: 50px 0 25px 0; }
+  .page-body__section__content a {
+    color: #fff;
+    text-decoration: underline; }
+    .page-body__section__content a:hover {
       color: #F92A82; }
 
 /*

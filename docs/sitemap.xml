@@ -25,4 +25,10 @@
             <changefreq></changefreq>
         </url>
     
+        <url>
+            <loc>/about/</loc>
+            <lastmod>2020-05-14T23:21:23.247Z</lastmod>
+            <changefreq></changefreq>
+        </url>
+    
 </urlset>
