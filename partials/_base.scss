@@ -1,0 +1,226 @@
+/*
+    Base
+    ---
+    Default style rules.
+    E.G. html, body, a
+*/
+
+@import 'reset';
+
+// Colour Variables
+$barebonesblack:   #111;         // Black
+$barebonesgrey:    #dddddd;      // Grey
+$bareboneswhite:   #fff;         // White
+$dancanettipink:   #F92A82;      // Alt
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;600;800&display=swap');
+$pfont:       'Khula', sans-serif;
+$pfontlight:  300;
+$pfontreg:    400;
+$pfontbold:   800;
+
+// Spacing Variables
+$maxwidth:       1250px;
+$maxwidthnarrow: 1000px;
+$ds:             75px;
+
+// Media Queries
+$screen-sm: 576px;
+@mixin sm {
+   @media (max-width: #{$screen-sm}) {
+       @content;
+   }
+}
+
+// Mixins
+@mixin transitionall($length) {
+  -webkit-transition: all $length ease-in-out;
+  -moz-transition: all $length ease-in-out;
+  -o-transition: all $length ease-in-out;
+  transition: all $length ease-in-out;
+}
+
+@mixin transitiondelay($length) {
+  -webkit-transition-delay: $length;
+  -moz-transition-delay: $length;
+  -o-transition-delay: $length;
+  transition-delay: $length;
+}
+
+// Animation
+@keyframes fade-in {      // Fade In
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Basics
+
+body {
+    //animation: init-fade 6s 1;
+    font-family: $pfont;
+    font-weight: $pfontlight;
+    background-color: $bareboneswhite;
+    padding-bottom: 0px;
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      background-color: $bareboneswhite;          // Light grey background
+      overflow: hidden;
+    }
+}
+
+// Smooth Scrolling
+@media screen and (prefers-reduced-motion: reduce) {
+	a[href*="#"] {
+		scroll-behavior: auto;
+	}
+}
+
+h1 {
+    font-weight: $pfontbold;
+    font-size: 4rem;
+    color: $barebonesblack;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 5vh 0;
+    margin: 0;
+    line-height: 1.25;
+    @include sm {
+        font-size: 3rem;
+    }
+    &.--sub {
+      position: fixed;
+      //top: 140px;
+      top: 40px;    // Hide behind nav toggle ;)
+      left: 55px;
+      color: $barebonesblack;
+      font-family: $pfont;
+      font-weight: $pfontbold;
+      font-size: 1rem;
+      letter-spacing: .25rem;
+    }
+}
+
+h2 {
+    @extend h1;
+    font-family: $pfont;
+    font-weight: $pfontbold;
+    font-size: 2.5rem;
+    letter-spacing: .25rem;
+    color: $barebonesblack;
+    padding: 0;
+    margin: 0 0 $ds 0;    
+}
+
+h3 {
+    @extend h2;
+    font-weight: $pfontbold;
+    font-size: 1.75rem;
+    letter-spacing: .05rem;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-top: 30px;
+    img {
+      & + strong {
+        font-size: .75rem;
+      }
+    }
+}
+
+a {
+    color: $barebonesblack;
+    text-decoration: none;
+    position: relative;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+button {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0 0 5px 0;
+  margin-top: 10px;
+  font-size: 1.25rem;
+  color: $barebonesblack;
+  text-decoration: none;
+  position: relative;
+  @include transitionall(.3s);
+  z-index: 1;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 1px;
+    width: 100%;
+    opacity: 0.3;
+    background: $bareboneswhite;
+    @include transitionall(.3s);
+  }
+  &:hover {
+    cursor: pointer;
+    &:before {
+      opacity: 1;
+      background: $dancanettipink;
+    }
+  }
+}
+
+.strong {
+    font-weight: $pfontbold;
+}
+
+hr {
+    box-shadow: none;
+    border: 1px solid $barebonesgrey;
+    height: 0px;
+    width: 12.5%;
+    margin: 75px 0 25px 0px;
+}
+
+blockquote {
+    font-family: $pfont;
+    margin: 75px 75px 5px 75px;
+    & + p {
+        font-family: $pfont;
+        margin: 25px 75px 75px 75px;
+        color: $barebonesblack;
+        font-size: .7em;
+    }
+    @include sm {
+      margin: 75px 25px 5px 25px;
+      & + p {
+        margin: 25px 25px 75px 25px;
+      }
+    }
+}
+
+code {
+  font-family: monospace;
+  background: rgba(255,255,255,0.1);
+}
+
+pre {
+  padding: 15px;
+  margin-top: 35px;
+  width: 100%;
+  overflow-y: scroll;
+  background: rgba(255,255,255,0.1);
+  code {
+    font-size: 1rem;
+    background: transparent;
+  }
+}
+
+s {   // Strikethrough
+  opacity: 0.5;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+        <url>
+            <loc>/blog/post/</loc>
+            <lastmod>2020-05-03T00:00:00.000Z</lastmod>
+            <changefreq></changefreq>
+        </url>
+    
+        <url>
+            <loc>/</loc>
+            <lastmod>2020-05-13T19:58:51.430Z</lastmod>
+            <changefreq></changefreq>
+        </url>
+    
+        <url>
+            <loc>/404.html</loc>
+            <lastmod>2020-05-13T23:26:30.259Z</lastmod>
+            <changefreq></changefreq>
+        </url>
+    
+</urlset>

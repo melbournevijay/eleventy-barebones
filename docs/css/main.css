@@ -1,0 +1,201 @@
+/*
+    Main
+    ---
+    Compiles the .scss partials and creates the final CSS file.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;600;800&display=swap");
+* {
+  box-sizing: border-box; }
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0px; }
+
+/*
+    Base
+    ---
+    Default style rules.
+    E.G. html, body, a
+*/
+* {
+  box-sizing: border-box; }
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0px; }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+body {
+  font-family: "Khula", sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+  padding-bottom: 0px; }
+  body .wrapper {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    overflow: hidden; }
+
+@media screen and (prefers-reduced-motion: reduce) {
+  a[href*="#"] {
+    scroll-behavior: auto; } }
+h1, h2, h3 {
+  font-weight: 800;
+  font-size: 4rem;
+  color: #111;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 5vh 0;
+  margin: 0;
+  line-height: 1.25; }
+  @media (max-width: 576px) {
+    h1, h2, h3 {
+      font-size: 3rem; } }
+  h1.--sub, h2.--sub, h3.--sub {
+    position: fixed;
+    top: 40px;
+    left: 55px;
+    color: #111;
+    font-family: "Khula", sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: .25rem; }
+
+h2, h3 {
+  font-family: "Khula", sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: .25rem;
+  color: #111;
+  padding: 0;
+  margin: 0 0 75px 0; }
+
+h3 {
+  font-weight: 800;
+  font-size: 1.75rem;
+  letter-spacing: .05rem; }
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-top: 30px; }
+  p img + strong {
+    font-size: .75rem; }
+
+a {
+  color: #111;
+  text-decoration: none;
+  position: relative; }
+  a:hover {
+    cursor: pointer; }
+
+button {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0 0 5px 0;
+  margin-top: 10px;
+  font-size: 1.25rem;
+  color: #111;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 1; }
+  button:before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 1px;
+    width: 100%;
+    opacity: 0.3;
+    background: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  button:hover {
+    cursor: pointer; }
+    button:hover:before {
+      opacity: 1;
+      background: #F92A82; }
+
+.strong {
+  font-weight: 800; }
+
+hr {
+  box-shadow: none;
+  border: 1px solid #dddddd;
+  height: 0px;
+  width: 12.5%;
+  margin: 75px 0 25px 0px; }
+
+blockquote {
+  font-family: "Khula", sans-serif;
+  margin: 75px 75px 5px 75px; }
+  blockquote + p {
+    font-family: "Khula", sans-serif;
+    margin: 25px 75px 75px 75px;
+    color: #111;
+    font-size: .7em; }
+  @media (max-width: 576px) {
+    blockquote {
+      margin: 75px 25px 5px 25px; }
+      blockquote + p {
+        margin: 25px 25px 75px 25px; } }
+
+code {
+  font-family: monospace;
+  background: rgba(255, 255, 255, 0.1); }
+
+pre {
+  padding: 15px;
+  margin-top: 35px;
+  width: 100%;
+  overflow-y: scroll;
+  background: rgba(255, 255, 255, 0.1); }
+  pre code {
+    font-size: 1rem;
+    background: transparent; }
+
+s {
+  opacity: 0.5; }
+
+/*
+    Layout
+    ---
+    Layout rules divide the page into sections. Layouts hold one or more modules together.
+    E.G. header, footer
+*/
+/*
+    Modules
+    ---
+    Modules are the reusable, modular parts of the design.
+    E.G. callouts, sidebar sections, product lists
+*/
+/*
+    State
+    ---
+    ways to describe how our modules or layouts will look when in a particular state.
+    E.G. Is it hidden or expanded? Is it active or inactive?
+*/
+
+/*# sourceMappingURL=main.css.map */
