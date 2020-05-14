@@ -7,18 +7,7 @@ pageFeatureImageRetina: /images/feature@2x.jpg
 pageDesc: A barebones Eleventy starter site.
 ---
 
-<div class="page-body">
-    <div class="page-body__section">
-      <h1>{{ pageTitle }}</h1>
-    </div>
-    <div class="page-body__section">
-      <h2>Posts</h2>
-      <div class="collection-list posts">
-        {% assign blogposts = collections.posts %}
-        {% for post in blogposts limit: 3 %}
-          <a href="{{ post.url }}" class="collection-list__link"><h3>{{ post.data.pageTitle }}</h3></a>
-          <!-- For reference - date {{ post.date | date: '%B %d, %Y' }} -->
-        {% endfor %}
-      </div>
-    </div>    
-</div>
+<div class="page-body__section">
+  <h1 class="logo"><img src="/img/logo.png" srcset="/img/logo@2x.png 2x" alt="{{ pageTitle }}"></h1>
+  <a href="https://github.com/DanCanetti/eleventy-barebones" class="cta">clone the repo</a>
+</div>   

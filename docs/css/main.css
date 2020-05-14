@@ -42,28 +42,28 @@ p {
   100% {
     opacity: 1; } }
 body {
-  font-family: "Khula", sans-serif;
+  font-family: courier, sans-serif;
   font-weight: 300;
   background-color: #fff;
-  padding-bottom: 0px; }
-  body .wrapper {
-    position: relative;
-    z-index: 1;
-    background-color: #fff;
-    overflow: hidden; }
+  padding-bottom: 0px;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw; }
 
 @media screen and (prefers-reduced-motion: reduce) {
   a[href*="#"] {
     scroll-behavior: auto; } }
 h1, h2, h3 {
+  font-family: "Khula", sans-serif;
   font-weight: 800;
   font-size: 4rem;
-  color: #111;
+  color: #fff;
   text-align: left;
   text-transform: uppercase;
   padding: 5vh 0;
-  margin: 0;
-  line-height: 1.25; }
+  line-height: 1.25;
+  letter-spacing: .5rem;
+  margin: 0 -.5rem 0 0; }
   @media (max-width: 576px) {
     h1, h2, h3 {
       font-size: 3rem; } }
@@ -72,13 +72,13 @@ h1, h2, h3 {
     top: 40px;
     left: 55px;
     color: #111;
-    font-family: "Khula", sans-serif;
+    font-family: courier, sans-serif;
     font-weight: 800;
     font-size: 1rem;
     letter-spacing: .25rem; }
 
 h2, h3 {
-  font-family: "Khula", sans-serif;
+  font-family: courier, sans-serif;
   font-weight: 800;
   font-size: 2.5rem;
   letter-spacing: .25rem;
@@ -149,10 +149,10 @@ hr {
   margin: 75px 0 25px 0px; }
 
 blockquote {
-  font-family: "Khula", sans-serif;
+  font-family: courier, sans-serif;
   margin: 75px 75px 5px 75px; }
   blockquote + p {
-    font-family: "Khula", sans-serif;
+    font-family: courier, sans-serif;
     margin: 25px 75px 75px 75px;
     color: #111;
     font-size: .7em; }
@@ -185,12 +185,113 @@ s {
     Layout rules divide the page into sections. Layouts hold one or more modules together.
     E.G. header, footer
 */
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; }
+  .wrapper:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+
+.page-body__section {
+  position: relative;
+  z-index: 2;
+  height: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+footer {
+  position: relative;
+  z-index: 2;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  nav ul li:not(:first-of-type) {
+    margin-left: 20px; }
+  nav ul li a {
+    color: #fff;
+    text-decoration: underline; }
+    nav ul li a:hover {
+      color: #F92A82; }
+
 /*
     Modules
     ---
     Modules are the reusable, modular parts of the design.
     E.G. callouts, sidebar sections, product lists
 */
+video {
+  position: fixed;
+  z-index: -1;
+  width: auto;
+  min-width: 100%;
+  height: auto; }
+
+.logo {
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 25px;
+  padding: 0; }
+  @media (max-width: 576px) {
+    .logo {
+      padding: 0 25px; } }
+  .logo img {
+    width: 100%;
+    height: auto; }
+
+.sub-logo {
+  max-width: 50px;
+  margin-top: 10px;
+  margin-bottom: auto; }
+  .sub-logo img {
+    width: 100%;
+    height: auto; }
+
+.cta {
+  position: relative;
+  background: #fff;
+  color: #111;
+  padding: 8px 14px;
+  width: auto; }
+  .cta:hover {
+    background: #F92A82;
+    color: #fff; }
+
+.collection-list {
+  height: 200px;
+  max-width: 500px;
+  width: 100%;
+  overflow-y: auto;
+  margin-bottom: 50px;
+  padding: 0 25px;
+  background: transparent;
+  text-align: center; }
+  .collection-list h3 {
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    margin: 25px auto 0 auto;
+    color: #fff;
+    text-decoration: underline; }
+    .collection-list h3:hover {
+      color: #F92A82; }
+
 /*
     State
     ---

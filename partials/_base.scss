@@ -15,7 +15,8 @@ $dancanettipink:   #F92A82;      // Alt
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;600;800&display=swap');
-$pfont:       'Khula', sans-serif;
+$hfont:       'Khula', sans-serif;
+$pfont:       courier, sans-serif;
 $pfontlight:  300;
 $pfontreg:    400;
 $pfontbold:   800;
@@ -59,19 +60,14 @@ $screen-sm: 576px;
 }
 
 // Basics
-
 body {
-    //animation: init-fade 6s 1;
-    font-family: $pfont;
-    font-weight: $pfontlight;
-    background-color: $bareboneswhite;
-    padding-bottom: 0px;
-    .wrapper {
-      position: relative;
-      z-index: 1;
-      background-color: $bareboneswhite;          // Light grey background
-      overflow: hidden;
-    }
+  font-family: $pfont;
+  font-weight: $pfontlight;
+  background-color: $bareboneswhite;
+  padding-bottom: 0px;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 // Smooth Scrolling
@@ -82,14 +78,16 @@ body {
 }
 
 h1 {
+    font-family: $hfont;
     font-weight: $pfontbold;
     font-size: 4rem;
-    color: $barebonesblack;
+    color: $bareboneswhite;
     text-align: left;
     text-transform: uppercase;
     padding: 5vh 0;
-    margin: 0;
     line-height: 1.25;
+    letter-spacing: .5rem;
+    margin: 0 -.5rem 0 0;
     @include sm {
         font-size: 3rem;
     }
