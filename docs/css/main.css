@@ -207,6 +207,8 @@ s {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .page-body__section.page-body__section__content--sub {
+    justify-content: flex-start; }
 
 footer {
   position: relative;
@@ -258,7 +260,7 @@ video {
 .sub-logo {
   max-width: 50px;
   margin-top: 10px;
-  margin-bottom: auto; }
+  margin-bottom: 50px; }
   .sub-logo img {
     width: 100%;
     height: auto; }
@@ -309,6 +311,63 @@ video {
     text-decoration: underline; }
     .page-body__section__content a:hover {
       color: #F92A82; }
+
+.tabs {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: calc(100% - 100px);
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  max-width: 700px;
+  background: transparent; }
+  .tabs .input {
+    position: absolute;
+    opacity: 0; }
+    .tabs .input:focus + label {
+      box-shadow: inset 0px 0px 0px 3px #2aa1c0;
+      z-index: 1; }
+    .tabs .input:checked + label {
+      background: #fff;
+      border: 1px solid #fff;
+      color: #111; }
+      .tabs .input:checked + label + .panel {
+        display: block; }
+  .tabs .label {
+    position: absolute;
+    width: 50%;
+    padding: 20px 30px;
+    background: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff; }
+    .tabs .label:last-of-type {
+      right: 0; }
+    .tabs .label:hover {
+      background: #F92A82;
+      color: #fff; }
+    .tabs .label:active {
+      background: #fff;
+      color: #111; }
+    @media (max-width: 576px) {
+      .tabs .label {
+        width: auto; } }
+  .tabs .panel {
+    display: none;
+    padding: 75px 30px 50px 30px;
+    background: transparent;
+    width: 100%;
+    color: #fff; }
+    .tabs .panel a {
+      color: #fff;
+      text-decoration: underline; }
+      .tabs .panel a:hover {
+        color: #F92A82; }
+    @media (max-width: 576px) {
+      .tabs .panel {
+        order: 99; } }
 
 /*
     State
