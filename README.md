@@ -4,7 +4,7 @@ Barebones is starter-kit for the [Eleventy](https://www.11ty.dev) static site ge
 
 **Versions**
 
-- [Version 0.0.1](https://barebones.danielcanetti.com/updates/launch/)
+- [Version 0.0.1](https://getbarebones.danielcanetti.com/updates/launch/)
 
 **Useful Links**
 
