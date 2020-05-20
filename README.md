@@ -8,9 +8,9 @@ Barebones is starter-kit for the [Eleventy](https://www.11ty.dev) static site ge
 
 **Useful Links**
 
-Please report any bugs [here](https://github.com/DanCanetti/eleventy-barebones/issues/new?assignees=&labels=&template=bug_report.md&title=).
+- Please report any bugs [here](https://github.com/DanCanetti/eleventy-barebones/issues/new?assignees=&labels=&template=bug_report.md&title=).
 
-Request feature [here](https://github.com/DanCanetti/eleventy-barebones/issues/new?assignees=&labels=&template=feature_request.md&title=).
+- Request feature [here](https://github.com/DanCanetti/eleventy-barebones/issues/new?assignees=&labels=&template=feature_request.md&title=).
 
 ## Usage
 
