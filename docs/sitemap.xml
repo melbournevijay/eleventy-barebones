@@ -31,4 +31,16 @@
             <changefreq></changefreq>
         </url>
     
+        <url>
+            <loc>/.github/ISSUE_TEMPLATE/bug_report/</loc>
+            <lastmod>2020-05-20T22:44:08.894Z</lastmod>
+            <changefreq></changefreq>
+        </url>
+    
+        <url>
+            <loc>/.github/ISSUE_TEMPLATE/feature_request/</loc>
+            <lastmod>2020-05-20T22:44:08.894Z</lastmod>
+            <changefreq></changefreq>
+        </url>
+    
 </urlset>

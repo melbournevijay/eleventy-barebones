@@ -168,3 +168,11 @@ video {
         }
     }
 }
+
+.page-body__section__content__share {
+    a {
+        &:not(:first-of-type) {
+            margin-left: 15px;
+        }
+    }
+}
