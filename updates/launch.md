@@ -7,4 +7,6 @@ pageFeatureImageRetina: /img/feature@2x.jpg
 pageDesc: A barebones Eleventy starter site.
 ---
 
-Barebones is now live. Feedback and feature requests are welcome via [Github](https://github.com/DanCanetti/eleventy-barebones.danielcanetti.com/issues) or [Twitter](https://twitter.com/Dan_Canetti).
+Barebones is now live. Feedback and feature requests are welcome via [Github](https://github.com/DanCanetti/eleventy-barebones/issues/new?assignees=&labels=&template=feature_request.md&title=) or [Twitter](https://twitter.com/Dan_Canetti).
+
+Please report any bugs [here](https://github.com/DanCanetti/eleventy-barebones/issues/new?assignees=&labels=&template=bug_report.md&title=).
