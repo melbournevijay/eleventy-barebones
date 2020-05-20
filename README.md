@@ -2,9 +2,15 @@
 
 Barebones is starter-kit for the [Eleventy](https://www.11ty.dev) static site generator.
 
-### Version
+**Versions**
 
-[Version 0.0.1](https://barebones.danielcanetti.com/updates/launch/)
+- [Version 0.0.1](https://barebones.danielcanetti.com/updates/launch/)
+
+**Useful Links**
+
+Please report any bugs [here](https://github.com/DanCanetti/eleventy-barebones/issues/new?assignees=&labels=&template=bug_report.md&title=).
+
+Request feature [here](https://github.com/DanCanetti/eleventy-barebones/issues/new?assignees=&labels=&template=feature_request.md&title=).
 
 ## Usage
 
